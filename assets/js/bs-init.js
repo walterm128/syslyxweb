@@ -1,54 +1,52 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', function() {
 
 (function(){
 
-	if(!('requestAnimationFrame' in window)) return;
-	if(/Mobile|Android/.test(navigator.userAgent)) return;
+	if (!('requestAnimationFrame' in window)) return;
+	if (/Mobile|Android/.test(navigator.userAgent)) return;
 
 	var backgrounds = [];
+	var parallaxBackgrounds = document.querySelectorAll('[data-bss-parallax-bg]');
 
-	$('[data-bs-parallax-bg]').each(function(){
-		var el = $(this);
-		var bg = $('<div>');
+	for (var el of parallaxBackgrounds) {
+		var bg = document.createElement('div');
 
-		bg.css({
-			backgroundImage: el.css('background-image'),
-			backgroundSize: 'cover',
-			backgroundPosition: 'center',
-			position: 'absolute',
-			height:'200%',
-			width:'100%',
-			top:0, left:0,
-			zIndex: -100
-		});
+		bg.style.backgroundImage = el.style.backgroundImage;
+		bg.style.backgroundSize = 'cover';
+		bg.style.backgroundPosition = 'center';
+		bg.style.position = 'absolute';
+		bg.style.height = '200%';
+		bg.style.width = '100%';
+		bg.style.top = 0;
+		bg.style.left = 0;
+		bg.style.zIndex = -100;
 
-		bg.appendTo(el);
-		backgrounds.push(bg[0]);
+		el.appendChild(bg);
+		backgrounds.push(bg);
 
-		el.css({
-			position:'relative',
-			background:'transparent',
-			overflow: 'hidden',
-		});
-	});
+		el.style.position = 'relative';
+		el.style.background = 'transparent';
+		el.style.overflow = 'hidden';
+	}
 
-	if(!backgrounds.length) return;
+	if (!backgrounds.length) return;
 
 	var visible = [];
 	var scheduled;
 
-	$(window).on('scroll resize', scroll);
+	window.addEventListener('scroll', scroll);
+	window.addEventListener('resize', scroll);
 
 	scroll();
 
-	function scroll(){
+	function scroll() {
 
 		visible.length = 0;
 
 		for(var i = 0; i < backgrounds.length; i++){
 			var rect = backgrounds[i].parentNode.getBoundingClientRect();
 
-			if(rect.bottom > 0 && rect.top < window.innerHeight){
+			if (rect.bottom > 0 && rect.top < window.innerHeight) {
 				visible.push({
 					rect: rect,
 					node: backgrounds[i]
@@ -59,7 +57,7 @@ $(document).ready(function(){
 
 		cancelAnimationFrame(scheduled);
 
-		if(visible.length){
+		if (visible.length) {
 			scheduled = requestAnimationFrame(update);
 		}
 
@@ -79,4 +77,4 @@ $(document).ready(function(){
 	}
 
 })();
-});
+}, false);
