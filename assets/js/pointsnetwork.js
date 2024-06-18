@@ -7,7 +7,7 @@
     var canvasDiv = document.getElementById('particle-canvas');
     var options = {
         particleColor: '#FFFFFF',
-        background: './assets/img/circle-futuristic-technology_48644-15 (2).jpg',
+        background: 'assets/img/circle-futuristic-technology_48644-15 (2).jpg',
         interactive: true,
         speed: 'medium',
         density: 'high'
