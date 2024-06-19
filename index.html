@@ -26,8 +26,10 @@
     <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
     <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/normalizeCard3D.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/styleCard3D.css">
 </head>
 
 <body id="page-top" style="background: radial-gradient(var(--bs-blue) 0%, var(--bs-gray) 100%), var(--bs-white);">
@@ -127,38 +129,50 @@
     <div class="features-clean">
         <div class="container" style="margin-bottom: 50px;padding: 0px;">
             <div class="row">
-                <div class="col-md-3 text-center" style="padding: 0px;border: 1px solid var(--bs-gray);border-radius: 5px;box-shadow: 1px 1px 2px 2px;">
-                    <div class="card">
-                        <div class="card-body text-center" style="height: 571px;padding: 0px;"><img class="shadow" src="assets/img/Capacitacion.png" style="width: 100%;height: 220px;">
-                            <h4 class="text-center card-title"><strong>ASESORAMIENTO</strong><br></h4>
-                            <p class="text-center text-muted">El objetivo es el de aclarar sus dudas sobre cualquier tema relacionado con informática para que pueda elegir el camino mas conveniente en tecnología.<br></p>
-                        </div>
-                    </div><a class="btn btn-primary shadow" role="button" style="background-color: rgb(54,158,254);" href="https://walterm128.github.io/syslyxweb/asesoramiento.html">Leer Mas...</a>
-                </div>
-                <div class="col-md-3 text-center" style="padding: 0px;border-radius: 5px;border: 1px solid var(--bs-gray);box-shadow: 1px 1px 2px 2px;">
-                    <div class="card">
-                        <div class="card-body" style="height: 571px;padding: 0px;"><img class="shadow" src="assets/img/Red.png" style="width: 100%;height: 220px;">
-                            <h4 class="card-title"><strong>REDES</strong><br></h4>
-                            <p class="text-center text-muted">Redes para Empresas de todo tipo.<br></p>
-                        </div>
-                    </div><a class="btn btn-primary shadow" role="button" style="background-color: rgb(54,158,254);" href="https://walterm128.github.io/syslyxweb/redes.html"><strong>Leer Mas...</strong><br></a>
-                </div>
-                <div class="col-md-3 text-center" style="padding: 0px;border-radius: 5px;border: 1px solid var(--bs-gray);box-shadow: 1px 1px 2px 2px;">
-                    <div class="card">
-                        <div class="card-body" style="height: 571px;padding: 0px;"><img class="shadow" src="assets/img/ServicioTecnico.png" style="width: 100%;height: 220px;">
-                            <h4 class="text-center card-title"><strong>SERVICIO TÉCNICO</strong><br></h4>
-                            <p class="text-center text-muted">Servicio técnico a Empresas, negocios y Domicilios.<br></p>
-                        </div>
-                    </div><a class="btn btn-primary shadow" role="button" style="background-color: rgb(54,158,254);" href="https://walterm128.github.io/syslyxweb/serviciotecnico.html">Leer Mas...</a>
-                </div>
-                <div class="col-md-3 text-center" style="padding: 0px;border: 1px solid var(--bs-gray);border-radius: 5px;box-shadow: 1px 1px 2px 2px var(--bs-gray-dark);">
-                    <div class="card">
-                        <div class="card-body" style="height: 571px;padding: 0px;"><img class="shadow" src="assets/img/programador.png" style="width: 100%;height: 220px;">
-                            <h4 class="text-center card-title"><strong>DESARROLLO</strong><br></h4>
-                            <p class="text-center text-muted">Diseñamos páginas Web, aplicaciones para PC, microcontroladores, Raspberry Pi Android.<br>Para que usted pueda mostrar al mundo sus intereses, sus negocios, sus productos y sus servicios.<br></p>
-                        </div>
-                    </div><a class="btn btn-primary shadow" role="button" style="background-color: rgb(54,158,254);" href="#Desarrollo">Leer Mas...</a>
-                </div>
+                <div class="col-md-3 text-center" style="padding: 0px;border-radius: 5px;border: 1px none var(--bs-gray);">    <div data-tilt data-tilt-speed="250" data-tilt-max="10" data-tilt-perspective="500" class="card3D clearfix">
+      <img class="imageCard3D" src="./assets/img/Capacitacion.png">
+      <p id="title" class="titleCard3D"><strong>ASESORAMIENTO</strong></p>
+      <p id="description" class="desc">El objetivo es el de aclarar sus dudas sobre cualquier tema relacionado con informática para que pueda elegir el camino mas conveniente en tecnología.
+      </p>
+      <a href="https://walterm128.github.io/syslyxweb/asesoramiento.html">
+        <div id="button" class="buttonCard3D clearfix">
+          <p class="textCard3D"><strong>Leer Más...</strong></p>
+        </div>
+        </a>
+    </div></div>
+                <div class="col-md-3 text-center" style="padding: 0px;border-radius: 5px;border: 1px none var(--bs-gray);">    <div data-tilt data-tilt-speed="250" data-tilt-max="10" data-tilt-perspective="500" class="card3D clearfix">
+      <img class="imageCard3D" src="./assets/img/Red.png">
+      <p id="title" class="titleCard3D"><strong>REDES</strong></p>
+      <p id="description" class="desc">Redes para Empresas de todo tipo.
+      </p>
+      <a href="https://walterm128.github.io/syslyxweb/redes.html">
+        <div id="button" class="buttonCard3D clearfix">
+          <p class="textCard3D"><strong>Leer Más...</strong></p>
+        </div>
+        </a>
+    </div></div>
+                <div class="col-md-3 text-center" style="padding: 0px;border-radius: 5px;border: 1px none var(--bs-gray);">    <div data-tilt data-tilt-speed="250" data-tilt-max="10" data-tilt-perspective="500" class="card3D clearfix">
+      <img class="imageCard3D" src="./assets/img/Red.png">
+      <p id="title" class="titleCard3D"><strong>SERVICIO TÉCNICO</strong></p>
+      <p id="description" class="desc">Servicio técnico a Empresas, negocios y Domicilios.
+      </p>
+      <a href="https://walterm128.github.io/syslyxweb/serviciotecnico.html">
+        <div id="button" class="buttonCard3D clearfix">
+          <p class="textCard3D"><strong>Leer Más...</strong></p>
+        </div>
+        </a>
+    </div></div>
+                <div class="col-md-3 text-center" style="padding: 0px;border-radius: 5px;border: 1px none var(--bs-gray);">    <div data-tilt data-tilt-speed="250" data-tilt-max="10" data-tilt-perspective="500" class="card3D clearfix">
+      <img class="imageCard3D" src="./assets/img/programadorNoBackground.png">
+      <p id="title" class="titleCard3D"><strong>DESARROLLO</strong></p>
+      <p id="description" class="desc">Diseño de páginas Web, aplicaciones para PC, Microcontroladores, Raspberry Pi, Android.
+      </p>
+      <a href="#Desarrollo">
+        <div id="button" class="buttonCard3D clearfix">
+          <p class="textCard3D"><strong>Leer Más...</strong></p>
+        </div>
+        </a>
+    </div></div>
             </div>
         </div>
     </div>
@@ -476,8 +490,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/agency.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/jqueryCard3D.slim.min.js"></script>
     <script src="assets/js/pointsnetwork.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/tiltCard3D.jquery.min.js"></script>
 </body>
 
 </html>

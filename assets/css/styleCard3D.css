@@ -1,0 +1,74 @@
+.buttonCard3D {
+  float: left;
+  width: 48.0891719745%;
+  height: 45px;
+  margin: 189px 0 0 26.1046974522%;
+  border-radius: 50px;
+  background-color: rgb(109, 175, 250);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  transform: translateZ(40px);
+}
+
+.card3D {
+  position: relative;
+  float: center;
+  width: 100%;
+  height: 540px;
+  margin: auto;
+  border-radius: 30px;
+  background: rgb(222, 222, 222);
+  background: -webkit-linear-gradient(268deg, #239ff2 0%, #0f0094 100%) rgb(222, 222, 222);
+  background: -moz-linear-gradient(268deg, #239ff2 0%, #0f0094 100%) rgb(222, 222, 222);
+  background: -o-linear-gradient(268deg, #239ff2 0%, #0f0094 100%) rgb(222, 222, 222);
+  background: -ms-linear-gradient(268deg, #239ff2 0%, #0f0094 100%) rgb(222, 222, 222);
+  background: linear-gradient(182deg, #239ff2 0%, #0f0094 100%) rgb(222, 222, 222);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+  transform: perspective(500px);
+}
+
+.desc {
+  position: absolute;
+  top: 285px;
+  left: 5.4140127388%;
+  width: 85%;
+  height: 150px;
+  font-size: 1em;
+  text-align: justify;
+  color: #ffffff !important;
+  transform: translateZ(30px);
+}
+
+.imageCard3D {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 2;
+  width: 100%;
+  height: 220px !important;
+  margin: 30px 0 0 0;
+  overflow: hidden;
+  transform: translateZ(50px);
+  filter: drop-shadow(2px 2px 20px #222);
+}
+
+.textCard3D {
+  float: left;
+  margin: 7px 0 0 17.87045%;
+  font-size: 1.059em;
+  font-weight: 400;
+  color: #000000 !important;
+  transform: translateZ(25px);
+}
+
+.titleCard3D {
+  position: relative;
+  float: left;
+  clear: both;
+  color: rgb(15.938, 15.938, 15.938) !important;
+  margin: 0 0 0 5.3841599999%;
+  font-size: 1.618em;
+  transform: translateZ(35px);
+  text-align: center !important;
+}
+
