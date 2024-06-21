@@ -6,7 +6,7 @@
   border-radius: 50px;
   background-color: rgb(109, 175, 250);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-  transform: translateZ(40px);
+  transform: translateZ(50px);
 }
 
 .card3D {
@@ -36,7 +36,7 @@
   font-size: 1em;
   text-align: justify;
   color: #ffffff !important;
-  transform: translateZ(30px);
+  transform: translateZ(50px);
 }
 
 .imageCard3D {
@@ -68,7 +68,7 @@
   color: rgb(15.938, 15.938, 15.938) !important;
   margin: 0 0 0 5.3841599999%;
   font-size: 1.618em;
-  transform: translateZ(35px);
+  transform: translateZ(50px);
   text-align: center !important;
 }
 
